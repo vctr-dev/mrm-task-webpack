@@ -10,7 +10,7 @@
 	"repository": "victorzchan/mrm-task-webpack",
 	"license": "MIT",
 	"engines": {
-		"node": ">=6.9"
+		"node": ">=8.9"
 	},
 	"main": "index.js",
 	"files": [
