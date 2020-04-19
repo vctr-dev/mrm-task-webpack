@@ -1,0 +1,43 @@
+{
+  "name": "mrm-task-webpack",
+  "version": "1.0.0",
+  "description": "",
+  "author": {
+    "name": "Victor Chan"
+  },
+  "homepage": "https://github.com/victorzchan/mrm-task-webpack",
+  "repository": "victorzchan/mrm-task-webpack",
+  "license": "MIT",
+  "engines": {
+    "node": ">=6.9"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "lint": "eslint . --cache --fix",
+    "pretest": "npm run lint",
+    "format": "prettier --loglevel warn --write \"**/*.{js,css,md}\"",
+    "posttest": "npm run format"
+  },
+  "keywords": [],
+  "dependencies": {
+    "mrm-core": "^4.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "husky": ">=4",
+    "lint-staged": ">=10",
+    "prettier": ">=2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write"
+  }
+}
