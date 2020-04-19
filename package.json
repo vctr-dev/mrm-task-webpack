@@ -1,9 +1,10 @@
 {
 	"name": "mrm-task-webpack",
 	"version": "1.0.0",
-	"description": "",
+	"description": "mrm task that adds webpack",
 	"author": {
-		"name": "Victor Chan"
+		"name": "Victor Chan",
+		"url": "https://vctr.dev"
 	},
 	"homepage": "https://github.com/victorzchan/mrm-task-webpack",
 	"repository": "victorzchan/mrm-task-webpack",
@@ -21,7 +22,12 @@
 		"format": "prettier --loglevel warn --write \"**/*.{js,css,md}\"",
 		"posttest": "npm run format"
 	},
-	"keywords": [],
+	"keywords": [
+		"mrm",
+		"mrm-task",
+		"webpack",
+		"javascript"
+	],
 	"dependencies": {
 		"mrm-core": "^4.1.0"
 	},
